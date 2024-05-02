@@ -1,0 +1,58 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "dist",
+    "strict": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noErrorTruncation": true,
+    "jsx": "react",
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "@c4ai-sdk/constants/*": ["src/constants/*"],
+      "@c4ai-sdk/services/*": ["src/c4ai-services/*"],
+      "@c4ai-sdk/entities/*": ["src/c4ai-entities/*"],
+      "@c4ai-sdk/global/*": ["src/global/*"],
+      "@c4ai-sdk/types/*": ["src/types/*"],
+      "@c4ai-sdk/helpers/*": ["src/helpers/*"]
+    },
+    "lib": [
+      "dom",
+      "esnext.asynciterable",
+      "es2015",
+      "es2016",
+      "es2017.object"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "tests/**/*", 
+    "index.ts"  
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "dist/**/*",
+    "node_modules/@types/mocha/index.d.ts"
+  ]
+}
